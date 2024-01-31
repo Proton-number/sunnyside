@@ -16,6 +16,7 @@ function App() {
     <>
       <Nav />
       <NavMobile />
+
       <Parallax
         pages={7}
         style={{
@@ -25,6 +26,8 @@ function App() {
         }}
       >
         <Creatives />
+      <Transform />
+
         <Transform />
         <Stand />
         <Design />

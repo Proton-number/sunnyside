@@ -14,7 +14,7 @@ import {
 function NavMobile() {
   return (
     <div id="mobileNav">
-      <AppBar>
+      <AppBar sx={{backgroundColor:"transparent"}} elevation={0}>
         <Toolbar>
           <Typography variant="h4" sx={{ flexGrow: 1 }}>
             sunnyside

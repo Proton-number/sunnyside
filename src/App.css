@@ -1,5 +1,4 @@
 #root {
-  width: 100%;
   margin: 0 auto;
 
 }
@@ -7,10 +6,16 @@
 #desktopNav{
   display: none;
 }
-
+#desktop-orange{
+  display: none;
+}
 
 #mobileNav{
   display: block;
+  }
+
+  #mobile-orange{
+    display: block;
   }
 
 
@@ -21,9 +26,15 @@
       display: block;
   }
 
+  #desktop-orange{
+    display: block;
+  }
+
   #mobileNav{
   display: none;
   }
   
-
+  #mobile-orange{
+     display: none;
+  }
 }
