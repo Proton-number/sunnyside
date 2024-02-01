@@ -20,7 +20,14 @@ function Footer() {
           justifyContent: "center",
         }}
       >
-        <Typography variant="h1" sx={{ fontSize: {xs:"50px", lg: "120px" }}}>
+        <Typography
+          component={motion.h1}
+          initial={{ opacity: 0, y: -80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: .2, duration: 1.2 }}
+          variant="h1"
+          sx={{ fontSize: { xs: "50px", lg: "120px" } }}
+        >
           sunnyside
         </Typography>
         <Stack direction="row" spacing={8}>

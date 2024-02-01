@@ -2,7 +2,6 @@ import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
 import { ParallaxLayer } from "@react-spring/parallax";
 import eggDesktop from "/src/Components/images/desktop/image-transform.jpg";
-import eggMobile from "/src/Components/images/mobile/image-transform.jpg";
 
 function Transform() {
   return (
@@ -26,14 +25,27 @@ function Transform() {
             // padding: "30px",
           }}
         >
-          <Stack spacing={3} sx={{ padding: "40px", textAlign: {xs:"center",sm:"left" }}}>
+          <Stack
+            spacing={3}
+            sx={{ padding: "40px", textAlign: { xs: "center", sm: "left" } }}
+          >
             <Typography variant="h3">Transform your brand</Typography>
             <Typography variant="body2" sx={{ width: { lg: "70%" } }}>
               We are a full-service creative agency specializing in helping
               brands grow fast. Engage your clients through compelling visuals
               that do most of the marketing for you.
             </Typography>
-            <Typography sx={{"&:hover":{textDecoration:"underline", textDecorationThickness:"4px", textDecorationColor:"hsl(49, 100%, 50%)"}}}>LEARN MORE</Typography>
+            <Typography
+              sx={{
+                "&:hover": {
+                  textDecoration: "underline",
+                  textDecorationThickness: "4px",
+                  textDecorationColor: "hsl(49, 100%, 50%)",
+                },
+              }}
+            >
+              LEARN MORE
+            </Typography>
           </Stack>
         </Stack>
         <Box

@@ -20,28 +20,52 @@ function Creatives() {
       >
         <Typography
           variant="h2"
-          sx={{ position: "absolute", top: "25%", textAlign: "center" }}
+          sx={{
+            position: "absolute",
+            top: { xs: "25%", lg: "30%" },
+            textAlign: "center",
+          }}
         >
           {" "}
           WE ARE CREATIVES
         </Typography>
         <Box
-          component="img"
-          alt="orange"
-          src={orangeMobile}
-          id="mobile-orange"
-          sx={{ width: "420px", height: "770px" }}
-        />
-        <Box
-          component="img"
-          alt="orange"
-          id="desktop-orange"
-          src={orangeDesktop}
           sx={{
-            width: { sm: "1400px", lg: "90%" },
-            height: { sm: "900px", lg:"auto" },
+            height: "100%",
+            width: "100%",
           }}
-        />
+        >
+          <Box
+            component="img"
+            alt="orange"
+            src={orangeMobile}
+            id="mobile-orange"
+            sx={{ width: "100%", height: "100%" }}
+          />
+        </Box>
+
+        <ParallaxLayer offset={0.4} speed={.7}>
+          <Box
+            sx={{
+              height: "100%",
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Box
+              component="img"
+              alt="orange"
+              id="desktop-orange"
+              src={orangeDesktop}
+              sx={{
+                width: "200%",
+                height: "100%",
+              }}
+            />
+          </Box>
+        </ParallaxLayer>
       </Stack>
     </ParallaxLayer>
   );

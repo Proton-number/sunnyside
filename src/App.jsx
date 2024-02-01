@@ -3,20 +3,30 @@ import "./App.css";
 import Nav from "./Components/Nav";
 import NavMobile from "./Components/NavMobile";
 import Creatives from "./Components/Creatives";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import { Parallax } from "@react-spring/parallax";
 import Transform from "./Components/Transform";
 import Stand from "./Components/Stand";
 import Design from "./Components/Design";
 import Testimonials from "./Components/Testimonials";
 import Shapes from "./Components/Shapes";
 import Footer from "./Components/Footer";
+import { Box, createTheme, ThemeProvider } from "@mui/material";
 
 function App() {
+
+
+  const theme = createTheme({
+    typography: {
+      fontFamily: "Fraunces, sans-serif",
+    },
+  })
+
   return (
     <>
       <Nav />
       <NavMobile />
 
+      <ThemeProvider theme={theme}>
       <Parallax
         pages={7}
         style={{
@@ -26,7 +36,7 @@ function App() {
         }}
       >
         <Creatives />
-      <Transform />
+        <Transform />
 
         <Transform />
         <Stand />
@@ -35,6 +45,7 @@ function App() {
         <Shapes />
         <Footer />
       </Parallax>
+      </ThemeProvider>
     </>
   );
 }

@@ -1,13 +1,4 @@
-import {
-  AppBar,
-  Toolbar,
-  Typography,
-  Stack,
-  createTheme,
-  ThemeProvider,
-  IconButton,
-  Button,
-} from "@mui/material";
+import { AppBar, Toolbar, Typography, Stack, Button } from "@mui/material";
 import { motion } from "framer-motion";
 import React from "react";
 
@@ -51,11 +42,11 @@ function Nav() {
                 backgroundColor: "white",
                 color: "black",
                 borderRadius: 20,
-                  padding: "0.5rem 1rem",
-                  "&:hover": {
-                      backgroundColor: "hsl(193, 100%, 60%)",
-                      color:'white'
-                }
+                padding: "0.5rem 1rem",
+                "&:hover": {
+                  backgroundColor: "hsl(193, 100%, 60%)",
+                  color: "white",
+                },
               }}
               disableElevation
             >
