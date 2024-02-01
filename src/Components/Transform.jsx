@@ -33,7 +33,7 @@ function Transform() {
               brands grow fast. Engage your clients through compelling visuals
               that do most of the marketing for you.
             </Typography>
-            <Typography>LEARN MORE</Typography>
+            <Typography sx={{"&:hover":{textDecoration:"underline", textDecorationThickness:"4px", textDecorationColor:"hsl(49, 100%, 50%)"}}}>LEARN MORE</Typography>
           </Stack>
         </Stack>
         <Box

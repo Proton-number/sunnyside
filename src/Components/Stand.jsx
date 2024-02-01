@@ -4,7 +4,10 @@ import { Box, Stack, Typography } from "@mui/material";
 import cup from "/src/Components/images/desktop/image-stand-out.jpg";
 function Stand() {
   return (
-    <ParallaxLayer offset={2} style={{ backgroundColor: "hotpink" }}>
+    <ParallaxLayer
+      offset={2}
+      speed={.5}
+    >
       <Stack
         direction={{ xs: "column", sm: "row" }}
         sx={{
@@ -37,7 +40,14 @@ function Stand() {
             alignItems: "center",
           }}
         >
-          <Stack spacing={2} sx={{ width:"80%", padding: "40px", textAlign:{xs:"center",sm:"right" } }}>
+          <Stack
+            spacing={2}
+            sx={{
+              width: "80%",
+              padding: "40px",
+              textAlign: { xs: "center", sm: "right" },
+            }}
+          >
             <Typography variant="h3">
               Stand out to the right audience
             </Typography>
@@ -47,7 +57,17 @@ function Stand() {
               photographers, videographers, and copywriters, we'll build and
               extend your brand in digital places.
             </Typography>
-            <Typography>LEARN MORE</Typography>
+            <Typography
+              sx={{
+                "&:hover": {
+                  textDecoration: "underline",
+                  textDecorationThickness: "4px",
+                  textDecorationColor: "hsl(7, 97%, 70%)",
+                },
+              }}
+            >
+              LEARN MORE
+            </Typography>
           </Stack>
         </Stack>
       </Stack>

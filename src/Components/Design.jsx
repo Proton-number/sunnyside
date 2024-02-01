@@ -5,7 +5,7 @@ import fruit1 from "/src/Components/images/desktop/image-graphic-design.jpg";
 import fruit2 from "/src/Components/images/desktop/image-photography.jpg";
 function Design() {
   return (
-    <ParallaxLayer offset={3}>
+    <ParallaxLayer offset={3} speed={0.3}>
       <Stack
         direction={{ xs: "column", sm: "row" }}
         sx={{
@@ -35,13 +35,13 @@ function Design() {
               display: "flex",
               alignItems: "center",
               position: "absolute",
-              top: { xs: "50%", sm: "60%" },
+              top: { xs: "50%", sm: "55%", lg: "60%" },
               left: { lg: "0%" },
             }}
           >
             <Typography
               variant="h3"
-              sx={{ fontSize: { xs: "40px", sm: "70px" } }}
+              sx={{ fontSize: { xs: "40px", lg: "70px" } }}
             >
               Graphic Design
             </Typography>
@@ -72,13 +72,13 @@ function Design() {
               display: "flex",
               alignItems: "center",
               position: "absolute",
-              top: { xs: "52%", sm: "60%" },
+              top: { xs: "52%", sm: "55%", lg: "60%" },
               left: { lg: "14%" },
             }}
           >
             <Typography
               variant="h3"
-              sx={{ fontSize: { xs: "40px", sm: "70px" } }}
+              sx={{ fontSize: { xs: "40px", lg: "70px" } }}
             >
               Photography
             </Typography>
