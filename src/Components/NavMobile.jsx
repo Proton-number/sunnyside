@@ -19,7 +19,7 @@ function NavMobile() {
     <>
       <AppBar
         id="mobileNav"
-        sx={{ backgroundColor: "hsl(194, 100%, 50%)" }}
+        sx={{ backgroundColor: "transparent" }}
         elevation={0}
       >
         <Toolbar>

@@ -5,13 +5,7 @@ import React from "react";
 function Nav() {
   return (
     <div id="desktopNav">
-      <AppBar
-        sx={{
-          backgroundColor: "hsl(194, 100%, 50%)",
-          
-        }}
-        elevation={0}
-      >
+      <AppBar elevation={0} sx={{ backgroundColor: "transparent" }}>
         <Toolbar>
           <Typography variant="h4" sx={{ flexGrow: 1 }}>
             sunnyside

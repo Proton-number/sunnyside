@@ -21,11 +21,7 @@ function App() {
 
   return (
     <>
-      <Nav />
-      <NavMobile />
-
       <ThemeProvider theme={theme}>
-
         <Parallax
           pages={7}
           style={{
@@ -34,6 +30,8 @@ function App() {
             height: "100vh",
           }}
         >
+          <Nav />
+          <NavMobile />
           <Creatives />
           <Transform />
 
