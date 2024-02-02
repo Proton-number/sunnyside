@@ -26,7 +26,7 @@ function Footer() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: .2, duration: 1.2 }}
           variant="h1"
-          sx={{ fontSize: { xs: "50px", lg: "120px" } }}
+          sx={{ fontSize: { xs: "50px",sm:"100px", lg: "120px" } }}
         >
           sunnyside
         </Typography>

@@ -6,7 +6,10 @@ function Nav() {
   return (
     <div id="desktopNav">
       <AppBar
-        sx={{ backgroundColor: "transparent", position: "absolute" }}
+        sx={{
+          backgroundColor: "hsl(194, 100%, 50%)",
+          
+        }}
         elevation={0}
       >
         <Toolbar>

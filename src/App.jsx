@@ -13,13 +13,11 @@ import Footer from "./Components/Footer";
 import { Box, createTheme, ThemeProvider } from "@mui/material";
 
 function App() {
-
-
   const theme = createTheme({
     typography: {
       fontFamily: "Fraunces, sans-serif",
     },
-  })
+  });
 
   return (
     <>
@@ -27,24 +25,25 @@ function App() {
       <NavMobile />
 
       <ThemeProvider theme={theme}>
-      <Parallax
-        pages={7}
-        style={{
-          backgroundColor: "#919191",
-          color: "#040404",
-          height: "100vh",
-        }}
-      >
-        <Creatives />
-        <Transform />
 
-        <Transform />
-        <Stand />
-        <Design />
-        <Testimonials />
-        <Shapes />
-        <Footer />
-      </Parallax>
+        <Parallax
+          pages={7}
+          style={{
+            backgroundColor: "#C9F7FF",
+            color: "hsl(171, 100%, 28%)",
+            height: "100vh",
+          }}
+        >
+          <Creatives />
+          <Transform />
+
+          <Transform />
+          <Stand />
+          <Design />
+          <Testimonials />
+          <Shapes />
+          <Footer />
+        </Parallax>
       </ThemeProvider>
     </>
   );
