@@ -3,7 +3,7 @@ import React from "react";
 import orangeDesktop from "/src/Components/images/desktop/image-header.jpg";
 import orangeMobile from "/src/Components/images/mobile/image-header.jpg";
 import { ParallaxLayer } from "@react-spring/parallax";
-
+import arrow from "/src/Components/images/icon-arrow-down.svg";
 function Creatives() {
   return (
     <ParallaxLayer offset={0}>
@@ -30,6 +30,16 @@ function Creatives() {
           WE ARE CREATIVES
         </Typography>
         <Box
+          component="img"
+          src={arrow}
+          sx={{
+            position: "absolute",
+            top: { xs: "45%", sm: "50%" },
+            left: {xs:"46%", sm: "48%", lg: "49%" },
+            zIndex: 1,
+          }}
+        />
+        <Box
           sx={{
             height: "100%",
             width: "100%",
@@ -44,7 +54,7 @@ function Creatives() {
           />
         </Box>
 
-        <ParallaxLayer offset={0.4} speed={.7}>
+        <ParallaxLayer offset={0.4} speed={0.7}>
           <Box
             sx={{
               height: "100%",
